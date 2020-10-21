@@ -1,0 +1,37 @@
+
+<h2>User Name:- {{username}}</h2>
+<h2>Phone Number:- {{phoneNo}}</h2>
+<br>
+<br>
+<h1 style="text-align:left; color: yellowGreen;">{{groupName | uppercase}}</h1>
+<h1 style="text-align: center; color:purple;">{{gDescription | uppercase}}</h1>
+
+<div style="text-align: center;">
+ <h1>Chat</h1>    
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Groups Name</th>
+                <th>Groups Message</th>
+                <th>username</th>
+                <th>phone No</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of AllMessage">             
+                <td>{{user.gname}}</td>
+                <td>{{user.gMessage}}</td>
+                <td>{{user.userName}}</td>
+                <td>{{user.phoneNo}}</td>           
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<textarea class="text2" #textmsg placeholder="Type  New message.." name="msg" required></textarea>
+<br>
+<br>
+<button type="submit" class="btn send" (click)="getMessage(textmsg.value)">Send</button>&nbsp;&nbsp;
+<button type="button" class="btn cancel" (click)= "closeForm()">Close</button>
+</div>

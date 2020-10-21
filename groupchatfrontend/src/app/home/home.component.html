@@ -1,0 +1,35 @@
+
+
+<br>
+<br>
+<h2 style="text-align: center;">User Name:-    {{username}}</h2>
+<h2 style="text-align: center;">Phone Number:-  {{phoneNo}}</h2>
+<h2 style="text-align: center;">List Of All Groups</h2>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Groups Name</th> 
+                <th>Groups Description</th>
+                <th>Click on button for indivial group chat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of response">             
+                <td>{{user.name}}</td>
+                <td>{{user.gDescription}}</td>      
+                <td><input type="button" name="log" id="log" value="Go To Text Box of this group" (click) = "groupChat(user.name ,user.gDescription)"></td> 
+            </tr>
+        </tbody>
+    </table>
+</div>
+    <!--div *ngFor="let user of response" style="text-align: center;">
+        <h4>{{user.name | uppercase}}</h4>
+        <input type="button" name="log" id="log" value="Go To Text Box of this group" (click) = "groupChat(user.name)">       
+    </div-->
+    
+<br>
+<br>
+<div style="text-align: center;">
+    <input type="button" name="log" id="log" value="Logout In Here" (click) = "removeToken()" class="logoutbtn">      
+</div>

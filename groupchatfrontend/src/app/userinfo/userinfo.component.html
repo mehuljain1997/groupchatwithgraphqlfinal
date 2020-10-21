@@ -1,0 +1,20 @@
+<div style="text-align: center;">
+  <h3>Please Login with Mobile Number</h3>  
+<form id="login">    
+    <label><b>User Name     
+    </b>    
+    </label>    
+    &nbsp;&nbsp; <input type="text" name="Uname" #username placeholder="Username">    
+    <br><br>    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><b>Phone Number.     
+    </b>    
+    </label>    
+    &nbsp;&nbsp;<input type="tel" name="phoneno" #phonenum placeholder="Phone Number">&nbsp;&nbsp;
+    <small>Format: 1234569890</small>    
+    <!--input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required--><br><br>
+    <input type="button" name="log" id="log" value="Log In Here" (click) = "insertUser(username.value, phonenum.value)">       
+    <br><br>  
+        
+     
+  </form>
+</div>

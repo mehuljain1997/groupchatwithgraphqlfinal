@@ -1,0 +1,30 @@
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+  }
+  
+  th {
+    background-color: #4287f5;
+    color: white;
+  }
+
+  .logoutbtn{
+    background-color:red;
+    width: 250px;
+    height: 40px;
+  }
+  
+  table, td, th {
+    border: 1px solid black;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,td {
+    text-align: center;
+  }
+
+  

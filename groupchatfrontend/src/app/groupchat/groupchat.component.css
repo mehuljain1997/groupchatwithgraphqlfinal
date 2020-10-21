@@ -1,0 +1,61 @@
+.send {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+
+  textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+ .text1 {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 2px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 70px;
+  }
+  .text2 {
+    width: 25%;
+    padding: 15px 70px 0px;
+    margin: 3px 0 2px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 15px;
+  }
+
+  .cancel {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+
+
+
+  table, td, th {
+    border: 1px solid black;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,td {
+    text-align: center;
+  }
+
+  

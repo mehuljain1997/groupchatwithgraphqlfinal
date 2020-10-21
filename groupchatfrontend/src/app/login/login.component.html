@@ -1,0 +1,19 @@
+<div style="text-align: center;">
+
+
+<form id="login">    
+    <label><b>User Name     
+    </b>    
+    </label>    
+    <input type="text" name="Uname" #username placeholder="Username">    
+    <br><br>    
+    <label><b>Password     
+    </b>    
+    </label>    
+    <input type="Password" name="Pass" #password placeholder="Password">    
+    <br><br>    
+    <input type="button" name="log" id="log" value="Log In Here" (click) = "generatetoken(username.value, password.value)">       
+    <br><br>    
+     
+  </form>
+</div>
